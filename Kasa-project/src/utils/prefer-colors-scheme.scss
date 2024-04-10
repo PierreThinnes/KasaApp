@@ -1,0 +1,64 @@
+@import './variables.scss';
+
+/*========== ☀️ LIGHT MOD ☀️ ==========*/
+    @media (prefers-color-scheme: light) {
+        .navbar__links a {
+            color: $Text-color-navbar;
+        }
+        .banner__background {
+            background: $Mask-banner-A;
+        }
+        .logement-gallery {
+            background-color: $Background-color;
+        }
+        .banner, .logement__carousel--slider, .tags,
+        .logement__description__top--host-block--host img {
+            box-shadow: $Shadow-carousel;
+        }
+        .logement-gallery {
+            @media screen and (min-width: 768px) {
+                box-shadow: $Shadow-carousel;
+            }
+        }
+        .logement__description__top--info h1 {
+            text-shadow: $Shadow-carousel;
+        }
+        .error-page a {
+            color: black;
+        }
+        .paragraph {
+            background-color: $Background-color;
+        }
+    }
+
+/*========== 🌙 DARK MOD 🌙 ==========*/
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #373a4a;
+        }
+        .banner__background {
+            background: $Mask-banner-B;
+        }
+        .navbar__links a {
+            color: white;
+        }
+        .logement-gallery, .paragraph {
+            background-color: #4b4f536a;
+        }
+        .banner, .logement__carousel--slider, .tags,
+        .logement__description__top--host-block--host img {
+            box-shadow: $Glow-carousel;
+        }
+        .logement-gallery {
+            @media screen and (min-width: 768px) {
+                box-shadow: $Glow-carousel;
+            }
+        }
+        .logement__description__top--info h1 {
+            text-shadow: $Glow-carousel;
+        }
+        .logement__description__top--info h2,
+        .error-page a {
+            color: white;
+        }
+    }

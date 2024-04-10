@@ -1,0 +1,20 @@
+/*========== Theme colors ==========*/
+    $Theme-color: #ff6060;
+    $Background-color: #F6F6F6;
+    $Text-color: white;
+    $Text-color-navbar: black;
+    $Footer-color: black;
+
+    /* Couleur du masque sur la bannière */
+    $Mask-banner-A: #000; /* Light-mod */
+    $Mask-banner-B: #000000ad; /* Dark-mod */
+
+    /* Dégradé de couleur sur les vignettes dans la gallerie */
+    $Linear-color: linear-gradient(to top, #863535, #ff6060);
+
+    /* Style de l'ombre du lien actif dans la navbar */
+    $Text-active-link: 0px 0px 5px rgba(137,52,52,0.4);
+
+    /* Ombre/Lueur du carrousel */
+    $Shadow-carousel: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+    $Glow-carousel: rgba(255, 255, 255, 0.157) 0px 8px 24px;

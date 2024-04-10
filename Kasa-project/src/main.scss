@@ -1,0 +1,23 @@
+/*=============== IMPORT UTILS ===============*/
+    @use "./utils/base.scss";
+    @use "./utils/prefer-colors-scheme.scss";
+    @use "./utils/variables.scss";
+
+/*=============== IMPORT COMPONENTS ===============*/
+    @use "./components/Carousel/carousel.scss";
+    @use "./components/Collapse/collapse.scss";
+    @use "./components/LogementCard/logementCard.scss";
+    @use "./components/LogementGallery/logementGallery.scss";
+    @use "./components/Rating/rating.scss";
+    @use "./components/Tags/tags.scss";
+
+/*=============== IMPORT LAYOUT ===============*/
+    @use "./layout/BannerHome/bannerhome.scss";
+    @use "./layout/Footer/footer.scss";
+    @use "./layout/Header/header.scss";
+    @use "./layout/MainContent/maincontent.scss";
+
+/*=============== IMPORT PAGES ===============*/
+    @use "./pages/AboutPage/aboutPage.scss";
+    @use "./pages/ErrorPage/errorPage.scss";
+    @use "./pages/LogementPage/logementPage.scss";
