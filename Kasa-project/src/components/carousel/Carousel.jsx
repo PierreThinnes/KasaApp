@@ -14,6 +14,8 @@ import { useState, useEffect } from "react";
 * @param {Object} props - Les propriétés passées au composant.
 * @param {string[]} props.slides - Un tableau de chaînes de caractères représentant les chemins des images à afficher dans le carrousel.
 */
+
+
 const Carousel = ({slides}) => {
 
     /** VARIABLES D'ÉTAT :

@@ -46,6 +46,7 @@ header {
             &.active {
                 color: $Theme-color;
                 text-shadow: $Text-active-link;
+                text-decoration: underline;
             }
             /* Style du lien dans la navbar quand un élément de la navbar est survolé */
             &:hover {

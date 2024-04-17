@@ -51,7 +51,7 @@
     }
     .paragraph {
         // border: 3px solid #e5ff00;
-        border-radius: 10px;
+        border-radius: 0 0 10px 10px;
         margin: 0;
         margin-bottom: 5px;
         font-size: 18px;
@@ -59,7 +59,7 @@
         line-height: 26px;
         letter-spacing: 0em;
         text-align: left;
-        color: #ff6060;
+        color: #000000;
         transform: translateY(-50px);
         overflow: hidden;
         opacity: 0;
@@ -71,9 +71,22 @@
             font-size: 14px;
         }
         &.animate {
+            
             opacity: 1;
             transform: translateY(0px);
-            height: max-content;
+            height: 210px;
         }
     }
+    &.open{.headCollapse{border-radius: 0 0 0 0;}}
+}
+
+.about .collapse .paragraph {
+    &.animate {
+    height:max-content ;}
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
 }

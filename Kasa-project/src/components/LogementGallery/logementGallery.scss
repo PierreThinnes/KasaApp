@@ -4,12 +4,13 @@
     // border: 3px solid red;
     min-height: 50vh;
     border-radius: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     justify-items: center;
     align-items: center;
+    justify-content: center;
     margin: 3em 0;
-    padding: 2.7em;
+    padding: 2.5em;
     gap: 2em;
 
     @media screen and (max-width: 768px) {
