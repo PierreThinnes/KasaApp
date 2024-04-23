@@ -21,18 +21,11 @@ function LogementCard(props) {
   * une image du logement, et le titre du logement.
   */
   return (
-    <Link 
-      to="/logement" 
-      state={{
-        logementById: props.id
-      }} 
-      className="logementCard">
-
-      <img src={props.imageUrl} alt={props.title} />
-      <h3>{props.title}</h3>
-
+    <Link to={`/logement/${props.id}`} className="logementCard">
+        <img src={props.imageUrl} alt={props.title} />
+        <h3>{props.title}</h3>
     </Link>
-  );
+);
 }
 
 export default LogementCard;

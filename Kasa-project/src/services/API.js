@@ -20,7 +20,7 @@ if (!window.fetch) {
     */
     async function logementsGetAll() {
         try {
-            const response = await fetch("logements.json");
+            const response = await fetch("../logements.json");
             return response.json();
         } catch (error) {
             console.error(error);
@@ -40,7 +40,7 @@ if (!window.fetch) {
     */
     async function logementGetById(id) {
         try {
-            const response = await fetch("logements.json");
+            const response = await fetch("../logements.json");
             const logs = await response.json();
             return logs.find((log) => log.id === id);
         } catch (error) {

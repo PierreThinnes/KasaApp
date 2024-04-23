@@ -23,7 +23,7 @@ function HomePage() {
   return (
     <>
       <BannerHome />
-      <Gallery path="logement/:id" element={<LogementPage />} />
+      <Gallery/>
     </>
   );
 }
