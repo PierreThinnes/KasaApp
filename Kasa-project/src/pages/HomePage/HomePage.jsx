@@ -12,14 +12,6 @@ import LogementPage from "../../pages/LogementPage/LogementPage.jsx";
 * )
 */
 function HomePage() {
-  /** RENDU DU COMPOSANT :
-  * Le rendu du composant comprend une bannière et une galerie de logements.
-  * Lorsque l'utilisateur clique sur un logement dans la galerie, il est dirigé vers la page de détails du logement.
-  * Le composant Gallery est rendu avec deux props : `path` et `element`.
-  * `path` est défini sur "logement/:id", ce qui est une indication pour la gestion des routes dans l'application.
-  * Il définit le chemin à suivre lorsqu'un élément de la galerie est cliqué, pour afficher les détails du logement.
-  * `element` est défini sur `<LogementPage />`, ce qui signifie que le composant LogementPage sera utilisé comme élément à afficher lorsque l'utilisateur cliquera sur un élément de la galerie.
-  */
   return (
     <>
       <BannerHome />

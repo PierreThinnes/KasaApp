@@ -31,10 +31,8 @@ const Carousel = ({slides}) => {
     const [autoScrollInterval, setAutoScrollInterval] = useState(null);
 
     /** FONCTIONS `autoSlide` ET `useEffect` :
-    * `autoSlide` est une fonction qui met à jour `currentIndex` pour passer à la diapositive suivante.
-    * Si la diapositive actuelle est la dernière, elle revient à la première.
-    * 
-    * `useEffect` est utilisé pour créer un intervalle qui appelle `autoSlide` toutes les 3 secondes (3000 ms).
+    * autoSlide est appelée pour passer à la diapositive suivante à intervalle régulier.
+    * useEffect gère le défilement automatique du carrousel en appelant autoSlide toutes les 3 secondes. Il s'arrête lorsque le composant est démonté.
     * L'intervalle est stocké dans `autoScrollInterval` pour pouvoir être effacé lorsque le composant est démonté.
     * Ces crochets `[]` en fin de la fonction `useEffect` assure que l'effet se déclenche qu'une seule fois après le rendu initial.
     */
@@ -123,7 +121,7 @@ const Carousel = ({slides}) => {
 * `slides` est une prop qui est nécessaire (`isRequired`) et doit être un tableau de chaînes de caractères (`arrayOf(PropTypes.string)`).
 * C'est le tableau des URL des images à afficher dans le carrousel.
 */
-Carousel.propType = {
+Carousel.propTypes = {
     slides : PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import Carousel from "../../components/carousel/Carousel.jsx";
 import Tags from "../../components/tags/Tags.jsx";
 import Rating from "../../components/rating/Rating.jsx";
@@ -8,7 +7,7 @@ import Collapse from "../../components/Collapse/Collapse.jsx";
 import { logementGetById } from "../../services/API.js";
 import ErrorPage from "../ErrorPage/ErrorPage.jsx";
 /** EXPLICATION DU COMPOSANT "LogementPage" :
-* C'est un composant qui affiche la page de détails d'un logement.
+* Le composant LogementPage est une fonction JavaScript qui représente la page de détails d'un logement.
 * 
 * @component
 * @example
@@ -17,9 +16,15 @@ import ErrorPage from "../ErrorPage/ErrorPage.jsx";
 * )
 */
 function LogementPage() {
-    
+
+/** Il commence par extraire l'ID du logement à partir des paramètres de l'URL à l'aide du hook useParams.
+* Ensuite, il utilise le hook useState pour définir un état selectedById qui contiendra les détails du logement une fois récupérés.
+*/    
+
     const { id } = useParams();
     const [selectedById, setSelectedById] = useState(null);
+
+/** Il utilise également le hook useEffect pour effectuer une requête pour obtenir les détails du logement lors de son montage.*/    
 
     useEffect(() => {
         logementGetById(id)
@@ -28,9 +33,18 @@ function LogementPage() {
             })
             .catch(console.error);
     }, []);
+
+/** Si les détails du logement ne sont pas encore récupérés, il affiche "Loading...".
+* S'il y a une erreur lors de la récupération des détails du logement, il affiche une page d'erreur. 
+*/
+
     if (selectedById == undefined) return <ErrorPage />;
     if (selectedById == null) return <div>Loading...</div>;
 
+/** Le composant rend une structure HTML avec plusieurs éléments pour afficher les détails du logement.
+* Il utilise le composant Carousel pour afficher les images du logement.
+* Il affiche le titre, l'emplacement, les tags, l'hôte, la notation, la description et les équipements du logement.
+*/
 
     return (
         <div className="logement">
