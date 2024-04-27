@@ -18,7 +18,7 @@ function Header() {
     return (
         <header>
             <NavLink to={`/`}>
-                <img src="src\assets\image\logo.svg" alt="Logo de Kasa" />
+                <img src="../src/assets/image/logo.svg" alt="Logo de Kasa" />
             </NavLink>
 
             <nav className="navbar__links">

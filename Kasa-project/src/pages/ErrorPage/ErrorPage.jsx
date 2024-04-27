@@ -1,18 +1,7 @@
 import { Link } from "react-router-dom";
 
-/** EXPLICATION DU COMPOSANT "ErrorPage" :
-* C'est un composant qui affiche une page d'erreur 404.
-* 
-* @component
-* @example
-* return (
-*   <ErrorPage />
-* )
-*/
 function ErrorPage() {
-  /** RENDU DU COMPOSANT :
-  * Le rendu du composant comprend un message d'erreur et un lien pour retourner à la page d'accueil.
-  */
+
   return (
     <>
       <div className="error-page">
