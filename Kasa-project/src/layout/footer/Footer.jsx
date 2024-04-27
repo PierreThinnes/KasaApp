@@ -17,7 +17,7 @@ function Footer() {
     <div className="footer">
 
         <NavLink to={`/`}>
-          <img src="src\assets\image\logo_footer.svg" alt="Logo de Kasa" className="footer__img" />
+          <img src="../src/assets/image/logo_footer.svg" alt="Logo de Kasa" className="footer__img" />
         </NavLink>
 
         <div className="footer__text">
