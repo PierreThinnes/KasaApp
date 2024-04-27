@@ -1,7 +1,7 @@
-import BannerAbout from "../../layout/BannerAbout/BannerAbout.jsx";
+
 import Collapse from "../../components/Collapse/Collapse.jsx";
 import aboutJson from "../../../public/about.json";
-
+import Banner from "../../layout/Banner/Banner.jsx";
 /** EXPLICATION DU COMPOSANT "AboutPage" :
 * C'est un composant qui affiche la page À propos.
 * 
@@ -18,8 +18,8 @@ const AboutPage = () => {
   * Chaque `Collapse` a un titre et un texte qui sont tirés de `aboutJson`.
   */
   return (
-    <div>
-      <BannerAbout />
+    <div >
+      <Banner image={"src/assets/image/banner2.png"} showHeading={false}  />
 
       <div className="about">
         {aboutJson.map((collapse, index) => (
